@@ -2,120 +2,113 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Abiodun | Front-End web Developer</title>
+  <title>Abiodun | Front-End Web Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #1e3a8a, #2563eb, #0f172a);
-      color: #e5e7eb;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #ffffff;
     }
 
-    /* LANDING / HERO */
-    .hero {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    header {
       text-align: center;
-      padding: 20px;
+      padding: 100px 20px;
     }
 
-    .hero h1 {
+    header h1 {
       font-size: 42px;
-      margin-bottom: 15px;
+      margin-bottom: 10px;
     }
 
-    .hero p {
+    header p {
       font-size: 18px;
       max-width: 600px;
-      margin: 0 auto 30px;
+      margin: auto;
+      opacity: 0.9;
+    }
+
+    .buttons {
+      margin-top: 30px;
     }
 
     .buttons a {
-      display: inline-block;
-      margin: 10px;
-      padding: 14px 24px;
-      border-radius: 8px;
       text-decoration: none;
+      padding: 12px 25px;
+      margin: 10px;
+      border-radius: 6px;
       font-weight: bold;
+      display: inline-block;
     }
 
     .btn-primary {
-      background: #22c55e;
-      color: #022c22;
+      background: #00c853;
+      color: #000;
     }
 
     .btn-secondary {
-      background: transparent;
-      border: 2px solid #60a5fa;
-      color: #60a5fa;
+      border: 2px solid #00c853;
+      color: #00c853;
     }
 
-    /* SECTIONS */
     section {
-      padding: 60px 20px;
       max-width: 900px;
       margin: auto;
+      padding: 60px 20px;
     }
 
     h2 {
-      color: #60a5fa;
-      margin-bottom: 20px;
+      text-align: center;
+      margin-bottom: 30px;
     }
 
     .card {
       background: rgba(255,255,255,0.1);
-      padding: 20px;
-      border-radius: 12px;
-      margin-bottom: 20px;
+      padding: 25px;
+      border-radius: 10px;
+      margin-bottom: 25px;
     }
 
     .card a {
-      display: inline-block;
-      margin-top: 10px;
-      color: #22c55e;
-      text-decoration: none;
+      color: #00c853;
       font-weight: bold;
+      text-decoration: none;
     }
 
     footer {
       text-align: center;
       padding: 20px;
-      background: rgba(0,0,0,0.4);
-      color: #94a3b8;
+      opacity: 0.7;
     }
   </style>
 </head>
 
 <body>
 
-  <!-- LANDING PAGE -->
-  <div class="hero">
-    <div>
-      <h1>Hi, I’m Abiodun 👋</h1>
-      <p>
-        Front-end developer building clean, responsive, and user-friendly
-        websites using HTML, CSS, and JavaScript.
-      </p>
+  <!-- HERO -->
+  <header>
+    <h1>Hi, I’m Abiodun 👋</h1>
+    <p>
+      Front-end developer focused on building clean, responsive, and user-friendly
+      websites using HTML, CSS, and JavaScript.
+    </p>
 
-      <div class="buttons">
-        <a href="#projects" class="btn-primary">View My Work</a>
-        <a href="#contact" class="btn-secondary">Contact Me</a>
-      </div>
+    <div class="buttons">
+      <a href="#projects" class="btn-primary">View My Work</a>
+      <a href="#contact" class="btn-secondary">Contact Me</a>
     </div>
-  </div>
+  </header>
 
   <!-- ABOUT -->
   <section>
     <h2>About Me</h2>
     <div class="card">
       <p>
-        I enjoy turning ideas into real websites.
-        I focus on clean design, responsiveness, and writing simple code that works.
-        I’m currently building projects to improve my skills and grow professionally.
+        I enjoy turning ideas into simple and functional web experiences.
+        I focus on clean design, good structure, and responsive layouts
+        that work across devices.
       </p>
     </div>
   </section>
@@ -126,27 +119,34 @@
 
     <div class="card">
       <h3>Simple Calculator</h3>
-      <p>A basic calculator built using HTML, CSS, and JavaScript.</p>
+      <p>
+        A basic calculator built with HTML, CSS, and JavaScript
+        that performs simple arithmetic operations.
+      </p>
       <a href="calculator.html">View Project →</a>
     </div>
 
     <div class="card">
-      <h3>More Coming Soon</h3>
-      <p>New projects will be added as I continue learning.</p>
+      <h3>Landscaping Landing Page</h3>
+      <p>
+        A clean landing page design for a landscaping business,
+        focused on layout, typography, and visual clarity.
+      </p>
+      <a href="#">View Project →</a>
     </div>
   </section>
 
   <!-- CONTACT -->
   <section id="contact">
-    <h2>Contact</h2>
+    <h2>Contact Me</h2>
     <div class="card">
       <p>Email: <a href="mailto:babatundea601@gmail.com">babatundea601@gmail.com</a></p>
-      <p>WhatsApp: <a href="https://wa.me/2348164197961" target="_blank">Chat on WhatsApp</a></p>
+      <p>WhatsApp: <a href="https://wa.me/2340000000000">Chat on WhatsApp</a></p>
     </div>
   </section>
 
   <footer>
-    © 2026 Abiodun. Built with ❤️ using HTML, CSS & JavaScript.
+    © 2026 Abiodun. All rights reserved.
   </footer>
 
 </body>
