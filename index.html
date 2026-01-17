@@ -3,27 +3,80 @@
 <head>
   <meta charset="UTF-8">
   <title>Abiodun | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    section {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    .card {
+      background: rgba(255,255,255,0.1);
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    input, button {
+      padding: 10px;
+      margin: 5px 0;
+      width: 100%;
+      border-radius: 5px;
+      border: none;
+    }
+    button {
+      background: #00c6ff;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    a {
+      color: #00c6ff;
+      text-decoration: none;
+    }
+  </style>
 </head>
+
 <body>
 
+<header>
   <h1>Hello, I am Abiodun</h1>
   <p>I am learning web development.</p>
+</header>
 
-  <h2>Contact Me</h2>
+<section>
+  <div class="card">
+    <h2>Contact Me</h2>
+    <p>📧 Email: <a href="mailto:babatundea601@gmail.com">babatundea601@gmail.com</a></p>
+    <p>💬 WhatsApp: <a href="https://wa.me/2348164197961">Chat on WhatsApp</a></p>
+  </div>
 
-  <p>
-    📧 Email:
-    <a href="mailto:babatundea601@gmail.com">
-      babatundea601@gmail.com
-    </a>
-  </p>
+  <div class="card">
+    <h2>Simple Calculator</h2>
+    <input type="number" id="num1" placeholder="First number">
+    <input type="number" id="num2" placeholder="Second number">
+    <button onclick="calculate()">Add</button>
+    <p id="result"></p>
+  </div>
+</section>
 
-  <p>
-    💬 WhatsApp:
-    <a href="https://wa.me/2348164197961">
-      Chat on WhatsApp
-    </a>
-  </p>
+<script>
+  function calculate() {
+    const a = Number(document.getElementById("num1").value);
+    const b = Number(document.getElementById("num2").value);
+    document.getElementById("result").innerText = "Result: " + (a + b);
+  }
+</script>
 
 </body>
 </html>
