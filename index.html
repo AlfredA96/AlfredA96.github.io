@@ -1,109 +1,119 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Abiodun | Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alfred Abiodun | Front-End Developer</title>
+
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-      color: white;
       margin: 0;
-      padding: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+      min-height: 100vh;
     }
+
     header {
-      padding: 40px 20px;
       text-align: center;
+      padding: 60px 20px;
     }
+
     section {
-      padding: 20px;
-      max-width: 800px;
-      margin: auto;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
     }
+
     .card {
-      background: rgba(255,255,255,0.1);
-      padding: 20px;
-      border-radius: 10px;
-      margin-bottom: 20px;
-    }
-    input, button {
-      padding: 10px;
-      margin: 5px 0;
+      background: white;
+      color: #333;
+      max-width: 700px;
       width: 100%;
-      border-radius: 5px;
-      border: none;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
     }
-    button {
-      background: #00c6ff;
-      color: black;
-      font-weight: bold;
-      cursor: pointer;
+
+    h1, h2, h3 {
+      margin-top: 0;
     }
-    a {
-      color: #00c6ff;
+
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 18px;
+      background: #667eea;
+      color: white;
       text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background: #5563c1;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      opacity: 0.8;
     }
   </style>
 </head>
 
 <body>
 
-<header>
-  <h<section>
-  <div class="card">
-    <h2>About Me</h2>
-    <p>
-     <p>
-  I am a front-end developer focused on building clean, responsive, and user-friendly
-  websites using HTML, CSS, and JavaScript. I enjoy turning ideas into real, functional
-  web pages and continuously improving my skills through hands-on projects.
-</p>
-    </p>
-  </div>
-</section>1>Hello, I am Abiodun</h1>
-  <<section>
-  <div class="card">
-    <h2>Projects</h2>
-<a href="#" c<a href="#" class="btn">View Project</a>lass="btn">View Project</a>
-    <h3>Simple Calculator</h3>
-    <p><a href="#" class="btn">View Project</a>
-      A basic calculator built with HTML, CSS, and JavaScript that performs
-      simple arithmetic operations.
-    </p>
+  <header>
+    <h1>Alfred Abiodun</h1>
+    <p>Front-End Developer</p>
+  </header>
 
-    <h3>Landscape Website</h3>
-    <p><a href="#" class="btn">View Project</a>
-      A simple responsive landscape-themed webpage created using HTML and CSS,
-      focusing on layout, colors, and clean design.
-    </p>
-  </div>
-</section>p>web development.</p>
-</header>
+  <section>
+    <div class="card">
+      <h2>About Me</h2>
+      <p>
+        I am a front-end developer focused on building clean, responsive, and
+        user-friendly websites using HTML, CSS, and JavaScript. I enjoy turning
+        ideas into real, functional web pages and improving my skills through
+        hands-on projects.
+      </p>
+    </div>
+  </section>
 
-<section>
-  <div class="card">
-    <h2>Contact Me</h2>
-    <p>📧 Email: <a href="mailto:babatundea601@gmail.com">babatundea601@gmail.com</a></p>
-    <p>💬 WhatsApp: <a href="https://wa.me/2348164197961">Chat on WhatsApp</a></p>
-  </div>
+  <section>
+    <div class="card">
+      <h2>Projects</h2>
 
-  <div class="card">
-    <h2>Simple Calculator</h2>
-    <input type="number" id="num1" placeholder="First number">
-    <input type="number" id="num2" placeholder="Second number">
-    <button onclick="calculate()">Add</button>
-    <p id="result"></p>
-  </div>
-</section>
+      <h3>Simple Calculator</h3>
+      <p>
+        A basic calculator built with HTML, CSS, and JavaScript that performs
+        simple arithmetic operations.
+      </p>
+      <a href="#" class="btn">View Project</a>
 
-<script>
-  function calculate() {
-    const a = Number(document.getElementById("num1").value);
-    const b = Number(document.getElementById("num2").value);
-    document.getElementById("result").innerText = "Result: " + (a + b);
-  }
-</script>
+      <h3 style="margin-top:30px;">Landscape Website</h3>
+      <p>
+        A simple responsive landscape-themed webpage created using HTML and CSS,
+        focusing on layout, colors, and clean design.
+      </p>
+      <a href="#" class="btn">View Project</a>
+    </div>
+  </section>
+
+  <section>
+    <div class="card">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:Babatundea601@gmail.com">Babatundea601@gmail.com</a></p>
+      <p>WhatsApp: <a href="https://wa.me/2348164197961">Chat on WhatsApp</a></p>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Alfred Abiodun. All rights reserved.
+  </footer>
 
 </body>
 </html>
